@@ -1,6 +1,7 @@
 import Banner from "./components/Banner";
 import Experience from "./components/Experience";
 import Header from "./components/Header";
+import Headsets from "./components/Headsets";
 import Video from "./components/Video";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Banner />
       <Experience/>
       <Video/>
+      <Headsets/>
     </div>
   );
 }
