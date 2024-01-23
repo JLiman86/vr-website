@@ -1,17 +1,18 @@
-import { useState } from "react";
+
 
 import Logo from "../assets/img/logo.svg";
-
 import Nav from "./Nav";
-import NavMobile from "./NavMobile";
-
 import { HiMenu } from "react-icons/hi";
 
-const Header = () => {
+type HeaderProps = {
+  setNavMobile: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
-  const [navMobile, setNavMobile] = useState(true);
+const Header = ({setNavMobile}:HeaderProps) => {
+
+  
   return (
-    <header className="py-6 relative">
+    <header data-aos-delay="700" data-aos="fade-down" className="py-6 relative z-10">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <a href="#">
@@ -23,9 +24,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className={`${navMobile ? "right-0 ":"-right-full" } fixed z-10 top-0 bottom-0 w-48 transition-all`}>
-        <NavMobile setNavMobile={setNavMobile}/>
-      </div>
+      
     </header>
   );
 };
