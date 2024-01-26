@@ -11,7 +11,7 @@ const Video = () => {
         <div className="flex flex-col justify-center items-center text-center lg:flex-row lg:justify-between">
           <h3
             data-aos="fade-right"
-            className="text-2xl font-semibold mb-8 lg:mb-2"
+            className="text-2xl font-semibold mb-8"
           >
             Awesome experiences with virtual reality world
           </h3>

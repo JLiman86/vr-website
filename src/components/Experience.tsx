@@ -7,11 +7,7 @@ const Experience = () => {
       <div className="container mx-auto">
         <div className="flex flex-col min-h-[480px] lg:space-x-20 lg:flex-row pb-12 lg:pb-24">
           <div className="flex-1 flex space-x-6 items-center lg:space-x-12 ">
-            <div
-              data-aos="fade-down"
-              data-aos-offset="400"
-              className="self-start "
-            >
+            <div data-aos-offset="400" data-aos="fade-down" className="self-start ">
               <img src={Img1} alt="" />
             </div>
             <div data-aos="fade-up" className="self-end">
@@ -19,7 +15,7 @@ const Experience = () => {
             </div>
           </div>
           <div
-            data-aos-offset = "400"
+            data-aos-offset="400"
             data-aos="fade-left"
             className="flex-1 flex flex-col items-start justify-center mt-6 lg:mt-0"
           >
